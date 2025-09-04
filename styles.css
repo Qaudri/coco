@@ -74,7 +74,7 @@ h2 {
 }
 
 .ca {
-  margin: 2rem auto;
+  margin: 5rem auto;
   border-radius: 2rem;
   padding: 2rem;
   text-align: center;
@@ -120,7 +120,7 @@ h2 {
 
 .socials {
   text-align: center;
-  margin: 4rem auto;
+  margin: 5rem auto;
   border: 3px solid var(--accent);
   border-radius: 2rem;
   padding: 2rem;
@@ -181,7 +181,7 @@ h2 {
 }
 
 .roadmap {
-  margin: 4rem auto;
+  margin: 5rem auto;
   text-align: center;
 
   ul {
