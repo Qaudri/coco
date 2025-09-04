@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
-  --bg: #151515;
+  --bg: #f4d9aa;
   /* --bg: #151a16; */
-  --primary: #43a33f;
-  --accent: #02f6fe;
+  --primary: #fcc248;
+  --accent: #864c0d;
 }
 
 * {
