@@ -188,7 +188,20 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+
+    div {
+      border: 3px solid var(--primary);
+      border-radius: 2rem;
+      padding: 2rem;
+
+      li {
+        list-style-position: inside;
+      }
+    }
   }
+
 }
 
 footer {
