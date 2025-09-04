@@ -61,8 +61,8 @@ main {
 
   h1 {
     font-size: 5rem;
-    color: var(--primary);
-  }
+    color: var(--accent);
+  }a
 
   article {
     margin-bottom: 3rem;
@@ -180,11 +180,19 @@ h2 {
   }
 }
 
+.roadmap {
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
 footer {
-  background: black;
+  background: var(--accent);
   text-align: center;
   margin-top: 3rem;
   padding: 2rem;
+  color: var(--bg);
 }
 
 @media screen and (max-width: 600px) {
@@ -240,5 +248,9 @@ footer {
     .tokenomics {
       border-width: 2px;
     }
+  }
+
+  .roadmap {
+    grid-template-columns: 1fr;
   }
 }
