@@ -280,4 +280,5 @@ footer {
   .roadmap > ul {
     grid-template-columns: 1fr;
   }
+  .image img {border-radius: 1rem;}
 }
