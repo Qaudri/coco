@@ -267,7 +267,7 @@ footer {
     }
   }
 
-  .roadmap {
+  .roadmap > ul {
     grid-template-columns: 1fr;
   }
 }
