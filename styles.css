@@ -204,6 +204,10 @@ h2 {
 
 }
 
+.image {
+    img{width: 100%;}
+}
+
 footer {
   background: var(--accent);
   text-align: center;
