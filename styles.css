@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --bg: #151515;
+  /* --bg: #151a16; */
+  --primary: #43a33f;
+  --accent: #02f6fe;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+
+h1, h2, button, a {
+  font-family: "Tektur", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: white;
+}
+
+header, section {
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 2rem 0;
+}
+
+.logo {
+  color: var(--primary);
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 700;
+
+  img {
+    width: 7rem;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+  }
+}
+
+main {
+  text-align: center;
+  img {
+    width: 100%;
+    border-radius: 2rem;
+    border: 3px solid var(--primary);
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: var(--primary);
+  }
+
+  article {
+    margin-bottom: 3rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.ca {
+  margin: 2rem auto;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: black;
+
+  h2 {
+    color: var(--primary);
+  }
+
+  .content {
+    border: 2px solid var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+
+    br {
+      display: none;
+    }
+    button {
+      padding: .75rem 1.5rem;
+      border-radius: .5rem;
+      outline: none;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 1rem;
+      outline: none;
+      border: none;
+      background: var(--accent);
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.socials {
+  text-align: center;
+  margin: 4rem auto;
+  border: 3px solid var(--accent);
+  border-radius: 2rem;
+  padding: 2rem;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+
+    a {
+      background: var(--accent);
+      padding: .75rem 1.5rem;
+      border-radius: .6rem;
+      display: flex;
+      color: black;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-position: inside;
+  gap: 2rem;
+
+  .buy {
+    border-radius: 2rem;
+    border: 3px solid var(--primary);
+    padding: 2rem;
+
+    li {
+      list-style: none;
+    }
+
+    ul {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    dd {
+      font-family: "Tektur", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+
+  .tokenomics {
+    padding: 2rem;
+    background: black;
+    border-radius: 2rem;
+    border: 3px solid var(--accent);
+  }
+}
+
+footer {
+  background: black;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  header, section {
+    max-width: 90vw;
+  }
+
+  .logo {
+    font-size: 3rem;
+    gap: 1.5rem;
+
+    img {
+      width: 5rem;
+    }
+  }
+
+  main {
+    img {
+      border-radius: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .ca {
+    border-radius: 1rem;
+
+    .content {
+      flex-wrap: wrap;
+      text-align: left;
+      br {
+        display: block;
+      }
+      button {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+
+    .buy {
+      border-width: 2px;
+    }
+
+    .tokenomics {
+      border-width: 2px;
+    }
+  }
+}
