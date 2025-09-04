@@ -23,7 +23,7 @@ h1, h2, button, a {
 
 body {
   background: var(--bg);
-  color: white;
+  color: var(--accent);
 }
 
 header, section {
@@ -81,7 +81,7 @@ h2 {
   background-color: var(--primary);
 
   h2 {
-    color: var(--primary);
+    color: var(--accent);
   }
 
   .content {
