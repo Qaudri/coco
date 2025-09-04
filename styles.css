@@ -182,9 +182,13 @@ h2 {
 
 .roadmap {
   margin: 4rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  text-align: center;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 footer {
